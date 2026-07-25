@@ -86,6 +86,7 @@ docker-compose up -d
 
 ## 📁 Estrutura do Projeto
 
+```
 AgroInteligen/
 ├── backend/          # API FastAPI
 ├── frontend/         # React + TypeScript
@@ -96,6 +97,7 @@ AgroInteligen/
 ├── datasets/         # Dados de exemplo
 ├── examples/         # Código de exemplo
 └── images/           # Imagens do projeto
+```
 
 ## 🎯 Público-alvo
 
