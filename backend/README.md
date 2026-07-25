@@ -26,5 +26,4 @@ cat > README.md << 'EOF'
 ## 🚀 Como Executar
 
 ```bash
-# Com Docker
 docker-compose up -d
