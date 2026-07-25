@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: agrointeligen_db
+    environment:
+      POSTGRES_USER: agrointeligen
+      POSTGRES_PASSWORD: agrointeligen123
+      POSTGRES_DB: agrointeligen
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - agrointeligen_network
+
+  redis:
+    image: redis:alpine
+    container_name: agrointeligen_cache
+    ports:
+      - "6379:6379"
+    networks:
+      - agrointeligen_network
+
+  backend:
+    build: ./backend
+    container_name: agrointeligen_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://agrointeligen:agrointeligen123@postgres:5432/agrointeligen
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ./backend:/app
+    networks:
+      - agrointeligen_network
+
+  frontend:
+    build: ./frontend
+    container_name: agrointeligen_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - agrointeligen_network
+
+volumes:
+  postgres_data:
+
+networks:
+  agrointeligen_network:
+    driver: bridge
