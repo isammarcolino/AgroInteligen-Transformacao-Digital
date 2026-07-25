@@ -8,6 +8,7 @@
 
 ## 🎯 Objetivos
 
+- Centralizar informações em uma única plataforma.
 - Monitoramento em tempo real de indicadores de qualidade e produção
 - Automação de auditorias, gestão documental e processos de qualidade
 - Análise preditiva para identificação proativa de riscos
@@ -21,26 +22,31 @@ As agroindústrias enfrentam desafios críticos:
 - Dificuldade em cumprir requisitos normativos (ISO, APPCC, BPF)
 - Tomada de decisão reativa sem análise preditiva
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Ferramentas
 
-### Backend
-- **Python 3.11+** - Linguagem principal
-- **FastAPI** - Framework web
-- **SQLAlchemy** - ORM
+### 📊 Dashboards e BI
+- **Power BI** - Criação de dashboards interativos e relatórios gerenciais para tomada de decisão em tempo real
 
-### Frontend
-- **React 18** - Framework UI
-- **TypeScript** - Tipagem estática
+### 🐍 Análise de Dados
+- **Python** - Processamento de dados, análises avançadas, modelos preditivos e automação de tarefas
 
-### Banco de Dados
-- **PostgreSQL** - Banco relacional
-- **Redis** - Cache
-- **ChromaDB** - Vector database
+### 🗄️ Banco de Dados
+- **SQL Server / PostgreSQL** - Armazenamento estruturado de dados, suporte a consultas complexas e integração com sistemas legados
 
-### Inteligência Artificial
-- **OpenAI API** - Modelos GPT
-- **LangChain** - Framework para LLMs
-- **RAG** - Retrieval-Augmented Generation
+### 📄 Gestão Documental
+- **SharePoint** - Repositório centralizado para documentos de qualidade (POP, APPCC, BPF, ISO 22000, FSSC 22000, ISO 9001)
+
+### 🤖 Inteligência Artificial
+- **Microsoft Copilot** - Geração de relatórios inteligentes, resumos automáticos e análises contextuais
+- **OCR** - Digitalização e extração de dados de documentos físicos e escaneados
+
+### 🔄 Automação e Integração
+- **Power Automate** - Automação de fluxos de trabalho, integração entre sistemas e notificações inteligentes
+
+### 📋 Controle de Qualidade
+- **Controle Estatístico do Processo (CEP)** - Monitoramento de variáveis, gráficos de controle e análise de capacidade
+- **APPCC Digital** - Gestão de perigos e pontos críticos de controle
+- **Matriz de Riscos** - Mapeamento e avaliação de riscos operacionais
 
 ## 📊 Funcionalidades
 
