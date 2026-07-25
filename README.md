@@ -82,6 +82,7 @@ As agroindústrias enfrentam desafios críticos:
 ### Usando Docker (Recomendado)
 ```bash
 docker-compose up -d
+```
 
 ## 📁 Estrutura do Projeto
 
