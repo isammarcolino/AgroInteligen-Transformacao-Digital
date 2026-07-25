@@ -82,3 +82,25 @@ As agroindústrias enfrentam desafios críticos:
 ### Usando Docker (Recomendado)
 ```bash
 docker-compose up -d
+
+## 📁 Estrutura do Projeto
+
+AgroInteligen/
+├── backend/          # API FastAPI
+├── frontend/         # React + TypeScript
+├── database/         # Migrações SQL
+├── docs/             # Documentação
+├── ia/               # Modelos e RAG
+├── dashboards/       # Power BI
+├── datasets/         # Dados de exemplo
+├── examples/         # Código de exemplo
+└── images/           # Imagens do projeto
+
+## 🎯 Público-alvo
+
+- Agroindústrias
+- Laticínios
+- Frigoríficos
+- Fábricas de ração
+- Cooperativas
+- Indústrias de alimentos
