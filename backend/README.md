@@ -28,7 +28,3 @@ cat > README.md << 'EOF'
 ```bash
 # Com Docker
 docker-compose up -d
-
-# Ou manualmente
-cd backend && uvicorn app.main:app --reload
-cd frontend && npm run dev
